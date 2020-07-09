@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "FLAnimatedImage",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v10)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -21,8 +21,7 @@ let package = Package(
             name: "FLAnimatedImage",
             path: "FLAnimatedImage",
             exclude: [ "Info.plist" ],
-            sources: [ "FLAnimatedImageView.m", "FLAnimatedImage.m" ],
-            publicHeadersPath: "./FLAnimatedImage"
+            sources: [ "FLAnimatedImageView.m", "FLAnimatedImage.m" ]
         )
     ]
 )
